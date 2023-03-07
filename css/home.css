@@ -1,0 +1,158 @@
+/*Mostly only had to change vertical aspects
+    of the styling to fit smaller resolution screens. Maybe 
+    replacing the pixel measurements with % measurements
+    instead will yield better responsive results?*/
+
+    @media only screen and (max-width: 768px) {
+        .my-picture {
+            height: 500px;
+            width: 500px;
+        }
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 75vh;
+        flex-direction: column;
+        margin-top: 0;
+        padding-top: 20;
+        margin: 0;
+        padding: 0;
+    }
+
+    .backgroundimage {
+        background-image: url(../images/background.jpg);
+        background-size: cover;
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .my-picture {
+        border-radius: 50%;
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+        transition: transform 0.8s;
+        border: 5px solid black;
+        margin-left: 12%;
+    }
+
+    .flipped {
+        transform: rotateY(180deg)
+    }
+
+    .titles {
+        position: relative;
+        width: 80%;
+        /*Changed margin-top to fit 1920x1080*/
+        margin-top: 75px;
+        margin-right: 5px;
+        top: 0;
+        width: 100%;
+        border: 5px solid black;
+        border-radius: 10px;
+        background-color: rgb(44, 42, 42);
+        color: rgb(47, 149, 197);
+        padding: 10px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    }
+
+    .quote {
+        font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+        border-bottom: 3px solid black;
+        border-radius: 5px;
+        font-size: 3vh;
+        text-align: center;
+    }
+
+    .name {
+        font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+        display: inline-block;
+        display: flex;
+        justify-content: space-between;
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    } 
+
+    .btn-open {
+        width: 100px;
+        height: 50px;
+        border-radius: 25px;
+        background-color: rgb(44, 42, 42);
+        color: rgb(17, 202, 202);
+        transition: all 0.3s ease-in-out;
+        display: inline-block;
+        width: 150px;
+        position: absolute;
+        /*Changed bottom to fit 1920x1080*/
+        bottom: -90px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+    
+    .btn-open:hover {
+        width: 175px;
+        height: 60px;
+        border-radius: 40px;
+        font-size: larger;
+    }
+    .flip-image {
+        width: 300px;
+        height: 300px;
+        transition: transform 0.5s;
+    }
+    .flip-image.flip {
+        transform: rotateY(180deg);
+    }
+
+    .btn-open:focus + .menu-content {
+        display: block;
+    }
+    .slide-in { /* Class to make elements of the page slide in from the right. */
+        opacity: 0;
+        transform: translateY(100%);
+        animation: slide-in 1s forwards;
+    }
+    @keyframes slide-in {
+        from {
+            opacity: 0;
+            transform: translateY();
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0%);
+        }
+    }
+    .fade-in {
+        opacity: 0;
+        transition: opacity 1s;
+    }
+    .fade-in.show {
+        opacity: 1;
+    }

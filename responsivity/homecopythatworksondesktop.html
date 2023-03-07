@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>John Schatzl's Portfolio</title>
+    <div class = "backgroundimage"></div>
+    <style>
+        body {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 75vh;
+            flex-direction: column;
+            margin-top: 0;
+            padding-top: 20;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .backgroundimage {
+            background-image: url(images/background.jpg);
+            background-size: cover;
+            position: absolute;
+            height: 100vh;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .my-picture {
+            border-radius: 50%;
+            height: 300px;
+            width: 300px;
+            object-fit: cover;
+            transition: transform 0.8s;
+            border: 5px solid black;
+        }
+
+        .flipped {
+            transform: rotateY(180deg)
+        }
+
+        .titles {
+            position: relative;
+            width: 80%;
+            margin-top: 0px;
+            margin-right: 5px;
+            top: 0;
+            width: 100%;
+            border: 5px solid black;
+            border-radius: 10px;
+            background-color: rgb(44, 42, 42);
+            color: rgb(47, 149, 197);
+            padding: 10px;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+        }
+
+        .quote {
+            font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+            border: 3px solid black;
+            background-color: rgb(44, 42, 42);
+            color: rgb(47, 149, 197);
+            border-radius: 5px;
+        }
+
+        .name {
+            font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+            display: inline-block;
+            display: flex;
+            justify-content: space-between;
+            font-size: 32px;
+            line-height: 32px;
+        }
+
+        .menu {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+
+        .btn-open {
+            width: 100px;
+            height: 50px;
+            border-radius: 25px;
+            background-color: rgb(44, 42, 42);
+            color: rgb(17, 202, 202);
+            transition: all 0.3s ease-in-out;
+            display: inline-block;
+            width: 150px;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+
+        .menu-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            z-index: 2;
+            display: none;
+        }
+
+        .menu-item {
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+        .btn-open:hover {
+            width: 175px;
+            height: 60px;
+            border-radius: 40px;
+            font-size: larger;
+        }
+
+        .btn-open:focus + .menu-content {
+            display: block;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+        <h2 class = "titles">Application/Web Developer</h2>
+        <h2 class = "titles">Student</h2>
+        <h2 class = "titles">Times' Person of The Year 2006</h2>
+    </header>
+    <img id = "myImage" src="images/my-picture.jpg" alt="My picture" class = "my-picture">
+    <script> src = "mainjs/imageflip.js"</script> <!-- Script for flipping my profile image. -->
+    <div class = "name">
+        <h1>John Schatzl</h1>
+    </div>
+    <p class = "quote">"The best way to help others is to help yourself."</p>
+    <div class = "menu">
+      <button class = "btn-open">Learn More</button>
+      <div class = "menu-content">
+        <button class = "menu-item" id = "aboutme">About Me</button>
+        <button class = "menu-item" id = "projects">Projects</button>
+        <button class = "menu-item" id = "skills">Skills/Technologies</button>
+      </div>
+    </div>
+  </body>
+</html>

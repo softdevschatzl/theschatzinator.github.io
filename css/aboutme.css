@@ -1,0 +1,217 @@
+/* Adding some basic styling and formatting */
+
+title { /* not even sure what this is for */
+    font-family: Georgia, serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  background-color: #333;
+  color: #c9c9c9;
+  padding: 1em;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  border-bottom: 3px solid black;
+  border-bottom-width: 3px;
+  width: 100%;
+}
+
+.bio {
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  h2 {
+    width: 25%;
+  }
+  .bio {
+    width: 10%;
+  }
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section {
+  flex: 1;
+  margin: 1em;
+}
+
+section img {
+  max-width: 100%;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+.background2image {
+  background-image: url(../images/background2.jpg);
+  background-size: cover;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.aboutpara {
+  padding: 10px;
+  background-color: rgb(44, 42, 42);
+  color: #c9c9c9;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #888;
+}
+
+.experiencepara {
+  padding: 10px;
+  background-color: rgb(44, 42, 42);
+  color: #c9c9c9;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #888;
+}
+
+.grid-container { /* Default grid layout for smaller resolutions. */
+  display: flex;
+  flex-direction: column;
+} 
+
+/*.grid-item {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+} */
+
+.left-column {
+  float: left;
+  flex-direction: column;
+}
+
+.right-column {
+  float: right;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) { /* This works! replicate this, make sure there are no conflicts. */
+  .grid-container {
+    flex-direction: column;
+  }
+}
+
+/*.contact-column-uno {
+  display: flex;
+}
+
+.contact-column-dos {
+  display: flex;
+  flex-direction: column;
+}
+
+/*@media screen and (min-width: 768px) { /* Grid layout for larger resolutions 
+  .grid-container{
+    flex-direction: row;
+
+  }
+}*/
+
+  .contact-me {
+    padding: 10px;
+    background-color: rgb(44, 42, 42);
+    color: #c9c9c9;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #888;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contact-info {
+    width: 45%;
+  }
+
+  .homeButton {
+    background-color: rgb(44, 42, 42);
+    color: rgb(17, 202, 202);
+    margin-left: 10px;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    border-radius: 30px;
+  }
+
+  .header1 {
+    display: flex;
+    align-items: center;
+  }
+
+  .homeButton:hover {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    font-size: 16px;
+  }
+
+  .socialimage {
+    height: auto;
+    width: 15%;
+    margin-right: 5px;
+  }
+
+  .personal {
+    width: 60px;
+    height: 20px;
+    color: rgb(47, 149, 197);
+    background-color: rgb(44, 42, 42);
+    padding: 0.5em;
+    border: 3px solid black;
+    border-radius: 7px;
+  }
+
+  .contactheader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1%;
+  }
+
+  .slide-in { /* Class to make elements of the page slide in from the right. */
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slide-in 1s forwards;
+  }
+
+  @keyframes slide-in {
+    from {
+      opacity: 0;
+      transform: translateX();
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+
+  .fade-in {
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
+  .fade-in.show {
+    opacity: 1;
+  }    

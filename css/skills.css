@@ -1,0 +1,163 @@
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .left-column {
+        flex-direction: row;
+    }
+    .right-column {
+        flex-direction: row;
+    }
+    .bottom-row {
+        top: 100%;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+} 
+
+.flex-container {
+    display: flex;
+    margin: 0 10px;
+    position: relative;
+    justify-content: space-between;
+}
+
+.left-column {
+    order: 1;
+    float: left;
+    margin-right: 10px;
+    flex: 1;
+    position: relative;
+}
+
+.right-column {
+    order: 2;
+    float: right;
+    margin-left: 10px;
+    flex: 1;
+    position: relative;
+}
+
+.bottom-row {
+    order: 3;
+    position: absolute;
+    bottom: -30vh;
+    flex-direction: row;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header {
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    margin: 0;
+}
+
+.background {
+    background-image: url("../images/background2.jpg");
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.skillslist {
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    padding: 10px;
+    background-color: rgb(44, 42, 42);
+    color: #c9c9c9;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #888;
+    list-style-position: inside;
+}
+
+.explevel {
+    display: inline-block;
+    border-bottom: 3px solid #c9c9c9;
+}
+
+.header1 {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.header2 {
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    border-bottom: 3px solid black;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+}
+
+.employer {
+    font-weight: bold;
+    border-bottom: 1px solid #c9c9c9;
+}
+
+.experience-item {
+    padding-top: 1rem;
+}
+
+.homeButton {
+    display: inline-block;
+    background-color: rgb(44, 42, 42);
+    color: #e6e6e6;
+    margin-left: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+.homeButton:hover {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+.slide-in { /* Class to make elements of the page slide in from the right. */
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slide-in 1s forwards;
+}
+
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateX();
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.fade-in.show {
+    opacity: 1;
+}
