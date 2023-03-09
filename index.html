@@ -8,32 +8,24 @@
   <body>
     <div class = "backgroundimage"></div>
     <div class = "container">
-      <div class = "slide-in">
-        <div class = title-headings>
-          <header>
-              <h2 class = "titles">Application / Web Developer</h2>
-              <h2 class = "titles">Student / Musician</h2>
-              <h2 class = "titles">Times' Person of The Year 2006</h2>
-          </header>
-        </div>
+      <div class = "title-headings slide-in">
+        <header>
+          <h2 class = "titles">Application / Web Developer</h2>
+          <h2 class = "titles">Student / Musician</h2>
+          <h2 class = "titles">Times' Person of The Year 2006</h2>
+        </header>
       </div>
-      <div class = "slide-in">
-          <img id = "myImage" src="images/john.jpg" alt="My picture" class = "my-picture">
-          <div class = "name">
-              <h1>John Schatzl</h1>
-          </div>
+      <img id = "myImage" src="images/john.jpg" class = "my-picture slide-in">
+      <div class = "name slide-in">
+          <h1>John Schatzl</h1>
       </div>
-      <div class = "slide-in">
-          <p class = "quote"><strong>"The way to get started is to quit talking and begin doing."</strong></p>
-          <a href = "menu.html">
-          <button id = "learn-more" class = "btn-open">Learn More</button>
-          </a>
-      </div>
+      <p class = "quote slide-in"><strong>"The way to start learning is to quit talking and begin doing."</strong></p>
+      <a href = "menu.html" class = "menu-button slide-in">
+        <button id = "learn-more" class = "btn-open slide-in">Learn More</button>
+      </a>
     </div>
       <script src = "mainjs/slide-in-below.js"></script> <!-- Script for sliding in elements from below. -->
       <script src = "mainjs/learnmore.js"></script> <!-- Script for the learn-more button to display the menu. -->
-      <script src = "mainjs/menucontent.js"></script> <!-- Script added to help the menu-items redirect by
-    adding an onClick event listener to the parent body as well.-->
       <script src = "mainjs/menuitem.js"></script> <!--Scripy for the menu buttons to redirect. -->
       <script src = "mainjs/imageflip.js"></script> <!-- Script for flipping my profile image. -->
   </body>
