@@ -119,21 +119,17 @@ header {
 }
 
 .homeButton {
-    display: inline-block;
     background-color: rgb(44, 42, 42);
     color: #e6e6e6;
-    margin-left: 10px;
-    height: 30px;
-    width: 30px;
-    border-radius: 30px;
-    font-size: 20px;
-}
+    margin-left: 1vh;
+    height: 4vh;
+    width: 4vh;
+    font-size: 2vh;
+    border-radius: 3vh;
+  }
 
 .homeButton:hover {
-    width: 30px;
-    height: 30px;
-    border-radius: 30px;
-    font-size: 16px;
+    font-size: 1.6vh;
 }
 
 .slide-in { /* Class to make elements of the page slide in from the right. */
