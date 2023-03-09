@@ -25,20 +25,21 @@ h2 {
   border-bottom: 3px solid black;
   border-bottom-width: 3px;
   width: 100%;
+  font-size: 3vh;
 }
 
 .bio {
   width: 100%;
 }
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
   h2 {
     width: 25%;
   }
   .bio {
     width: 10%;
   }
-}
+} */
 
 main {
   display: flex;
@@ -78,6 +79,7 @@ footer {
   color: #c9c9c9;
   border-radius: 10px;
   box-shadow: 2px 2px 10px #888;
+  font-size: 2vh;
 }
 
 .experiencepara {
@@ -148,11 +150,11 @@ footer {
   .homeButton {
     background-color: rgb(44, 42, 42);
     color: #e6e6e6;
-    margin-left: 10px;
-    height: 30px;
-    width: 30px;
-    font-size: 20px;
-    border-radius: 30px;
+    margin-left: 1vh;
+    height: 4vh;
+    width: 4vh;
+    font-size: 2vh;
+    border-radius: 3vh;
   }
 
   .header1 {
@@ -161,10 +163,7 @@ footer {
   }
 
   .homeButton:hover {
-    width: 30px;
-    height: 30px;
-    border-radius: 30px;
-    font-size: 16px;
+    font-size: 1.6vh;
   }
 
   .socialimage {
@@ -215,3 +214,25 @@ footer {
   .fade-in.show {
     opacity: 1;
   }    
+
+  @media only screen and (max-width: 1000px) {
+    .header1 {
+      font-size: 2vh;
+    }
+
+    .aboutpara {
+      font-size: 1vh;
+    }
+
+    h3 {
+      font-size: 2vh;
+    }
+
+    .email {
+      font-size: 1.5vh;
+    }
+
+    .socialimage {
+      width: 30%;
+    }
+  }
