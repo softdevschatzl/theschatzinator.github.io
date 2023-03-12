@@ -155,6 +155,7 @@ footer {
     width: 40px;
     font-size: 20px;
     border-radius: 30px;
+    line-height: 40px;
   }
 
   .header1 {
@@ -163,7 +164,7 @@ footer {
   }
 
   .homeButton:hover {
-    font-size: 1.6vh;
+    font-size: 16px;
   }
 
   .socialimage {
