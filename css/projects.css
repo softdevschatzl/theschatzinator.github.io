@@ -143,9 +143,9 @@ h2 {
 .project-item {
     display: flex; 
     flex-wrap: wrap;
-    flex: 1;
     border-radius: 10px;
     margin-left: 5px;
+    flex-direction: row;
 }
 
 .projectpara {
@@ -225,6 +225,13 @@ h2 {
   opacity: 1;
 }   
 
+@media only screen and (min-width: 981px) {
+    .project-item {
+        flex: 1;
+    }
+}
+
+/* Encompasses mobile phones / tablets. */
 @media only screen and (max-width: 980px) {
     .container {
         display: flex;
@@ -233,11 +240,32 @@ h2 {
     }
     
     .project-item {
+        margin-top: 250px;
+        width: 100%;
         transform: scale(2);
+        flex-direction: column;
     }
 
     .projects {
         display: flex;
         flex-direction: column;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    h2 {
+        font-size: 60px;
+    }
+
+    h3 {
+        position: absolute;
+    }
+
+    .projectpara {
+        font-size: 20px;
+        position: absolute;
+        bottom: -5px;
     }
 }
