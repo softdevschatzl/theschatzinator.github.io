@@ -157,3 +157,24 @@ header {
 .fade-in.show {
     opacity: 1;
 }
+
+@media only screen and (max-width: 980px) {
+    h1 {
+        font-size: 50px;
+    }
+    .header2 {
+        font-size: 50px;
+    }
+    .explevel {
+        font-size: 37px;
+    }
+    .bottom-row {
+        bottom: -35vh;
+    }
+    .employer {
+        font-size: 35px;
+    }
+    .expsummary {
+        font-size: 40px;
+    }
+}
