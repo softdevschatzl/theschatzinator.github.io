@@ -179,7 +179,7 @@ h2 {
 }
 
 .homeButton:hover {
-    font-size: 1.6vh;
+    font-size: 16px;
 }
 
 .slide-in { /* Class to make elements of the page slide in from the right. */
@@ -249,7 +249,7 @@ h2 {
     }
     
     .project-item {
-        width: 100%;
+        width: 90%;
         flex-direction: column;
         margin: 0 auto;
         margin-top: 250px;

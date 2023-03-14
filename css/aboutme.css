@@ -144,18 +144,16 @@ footer {
   }
 
   .contact-info {
-    width: 45%;
+    width: 50%;
   }
 
   .homeButton {
     background-color: rgb(44, 42, 42);
     color: #e6e6e6;
-    margin-left: 1vh;
-    height: 40px;
-    width: 40px;
+    margin-left: 20px;
+    padding: 6px 12px;
     font-size: 20px;
-    border-radius: 30px;
-    line-height: 40px;
+    border-radius: 50%;
   }
 
   .header1 {
