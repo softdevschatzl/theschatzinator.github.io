@@ -52,6 +52,7 @@
 .cloud:hover {
     transform: scale(1.15);
 }
+
 .cloud button {
     transform: scale(29);
     margin-top: 40px;
@@ -124,7 +125,7 @@ h2 {
     justify-content: center;
 }
 
-.h1span{
+.h1span {
     margin-left: 10px;
     opacity: 0;
 }
@@ -162,16 +163,17 @@ h2 {
     width: 4vh;
     font-size: 2vh;
     border-radius: 3vh;
-  } */
+} */
 
-  .homeButton {
+.homeButton {
     background-color: rgb(44, 42, 42);
     color: #e6e6e6;
     margin-left: 20px;
     padding: 6px 12px;
     font-size: 20px;
-    border-radius: 50%;
-  }
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+}
 
 .header1 {
     display: flex;
@@ -180,6 +182,7 @@ h2 {
 
 .homeButton:hover {
     font-size: 16px;
+    padding: 8px 12px;
 }
 
 .slide-in { /* Class to make elements of the page slide in from the right. */
@@ -228,7 +231,7 @@ h2 {
 .fade-in {
   opacity: 0;
   transition: opacity 1s;
- }
+}
 
 .fade-in.show {
   opacity: 1;
@@ -282,10 +285,11 @@ h2 {
         position: absolute;
         bottom: -5px;
     }
+
     .homeButton {
         width: 80px;
         height: 80px;
         border-radius: 40px;
         font-size: 40px;
-      }
+    }
 }
