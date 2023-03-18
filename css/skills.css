@@ -121,15 +121,16 @@ header {
 .homeButton {
     background-color: rgb(44, 42, 42);
     color: #e6e6e6;
-    margin-left: 1vh;
-    height: 4vh;
-    width: 4vh;
-    font-size: 2vh;
-    border-radius: 3vh;
-  }
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+}
 
 .homeButton:hover {
-    font-size: 1.6vh;
+    font-size: 16px;
 }
 
 .slide-in { /* Class to make elements of the page slide in from the right. */
@@ -162,19 +163,31 @@ header {
     h1 {
         font-size: 50px;
     }
+
     .header2 {
         font-size: 50px;
     }
+
     .explevel {
         font-size: 37px;
     }
+
     .bottom-row {
         bottom: -35vh;
     }
+
     .employer {
         font-size: 35px;
     }
+
     .expsummary {
+        font-size: 40px;
+    }
+
+    .homeButton {
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
         font-size: 40px;
     }
 }
