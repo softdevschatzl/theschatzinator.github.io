@@ -81,12 +81,6 @@ header h1 {
     margin: 0;
 }
 
-nav a {
-    color: #333;
-    text-decoration: none;
-    margin-right: 1em;
-}
-
 main {
     display: flex;
     flex-wrap: wrap;
@@ -97,20 +91,11 @@ section {
     margin: 1em;
 }
 
-section img {
-    max-width: 100%;
-}
-
 footer {
     background-color: #333;
     color: #fff;
     padding: 1em;
     text-align: center;
-}
-
-img {
-    width: 600px;
-    height: 400px;
 }
 
 h3 {
@@ -292,4 +277,5 @@ h2 {
         border-radius: 40px;
         font-size: 40px;
     }
+
 }
