@@ -150,24 +150,24 @@ h2 {
     border-radius: 3vh;
 } */
 
-.homeButton {
-    background-color: rgb(44, 42, 42);
-    color: #e6e6e6;
-    margin-left: 20px;
-    padding: 6px 12px;
-    font-size: 20px;
-    border-radius: 20px;
-    transition: all 0.2s ease-in-out;
-}
-
 .header1 {
     display: flex;
     align-items: center;
 }
 
+.homeButton {
+    background-color: rgb(44, 42, 42);
+    color: #e6e6e6;
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
 .homeButton:hover {
     font-size: 16px;
-    padding: 8px 12px;
 }
 
 .slide-in { /* Class to make elements of the page slide in from the right. */
@@ -277,5 +277,10 @@ h2 {
         border-radius: 40px;
         font-size: 40px;
     }
-
+    
+    .cloud {
+        left: 30%;
+        margin: 0;
+        margin-bottom: 80px;
+    }
 }
