@@ -173,9 +173,12 @@ header {
     }
 
     .bottom-row {
-        bottom: -35vh;
+        bottom: -910px;
     }
 
+    .skillslist {
+        font-size: 40px;
+    }
     .employer {
         font-size: 35px;
     }
