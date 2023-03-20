@@ -57,7 +57,7 @@
     transform: scale(29);
     margin-top: 40px;
     margin-left: 40px;
-    opacity: 0;
+    opacity: 1;
 }
 
 title { /* not even sure what this is for */
@@ -282,5 +282,9 @@ h2 {
         left: 30%;
         margin: 0;
         margin-bottom: 80px;
+    }
+    
+    .cloud button {
+        width: 5%;
     }
 }
