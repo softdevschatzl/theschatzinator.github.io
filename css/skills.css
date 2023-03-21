@@ -173,18 +173,18 @@ header {
     }
 
     .bottom-row {
-        bottom: -910px;
+        bottom: -750px;
     }
 
     .skillslist {
-        font-size: 40px;
+        font-size: 35px;
     }
     .employer {
         font-size: 35px;
     }
 
     .expsummary {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .homeButton {
