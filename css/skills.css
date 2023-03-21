@@ -189,6 +189,8 @@ header {
     }
 
     .homeButton {
+        display: flex;
+        justify-content: center;
         width: 80px;
         height: 80px;
         border-radius: 40px;
