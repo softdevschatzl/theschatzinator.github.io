@@ -152,6 +152,7 @@ a {
 .header1 {
     display: flex;
     align-items: center;
+    text-align: center;
 }
 
 .homeButton {
@@ -272,10 +273,19 @@ a {
     }
 
     .homeButton {
+        display: flex;
+        justify-content: center;
         width: 80px;
         height: 80px;
         border-radius: 40px;
         font-size: 40px;
+        align-items: center;
+        text-align: center;
+        line-height: 70px;
+    }
+
+    .homeButton:hover {
+        font-size: 30px;
     }
     
     .cloud {
