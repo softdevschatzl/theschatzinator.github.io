@@ -127,6 +127,7 @@ header {
     font-size: 20px;
     border-radius: 20px;
     transition: all 0.2s ease-in-out;
+    text-align: center;
 }
 
 .homeButton:hover {
@@ -192,5 +193,6 @@ header {
         height: 80px;
         border-radius: 40px;
         font-size: 40px;
+        line-height: 70px;
     }
 }
