@@ -28,19 +28,6 @@ h2 {
   font-size: 3vh;
 }
 
-.bio {
-  width: 100%;
-}
-
-/* @media only screen and (max-width: 768px) {
-  h2 {
-    width: 25%;
-  }
-  .bio {
-    width: 10%;
-  }
-} */
-
 main {
   display: flex;
   flex-wrap: wrap;
@@ -49,17 +36,6 @@ main {
 section {
   flex: 1;
   margin: 1em;
-}
-
-section img {
-  max-width: 100%;
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 1em;
-  text-align: center;
 }
 
 .background2image {
@@ -95,18 +71,11 @@ footer {
   flex-direction: column;
 } 
 
-/*.grid-item {
-  width: calc(33.33% - 20px);
-  margin: 10px;
-} */
-
 .left-column {
-  float: left;
   flex-direction: column;
 }
 
 .right-column {
-  float: right;
   flex-direction: column;
 }
 
@@ -115,22 +84,6 @@ footer {
     flex-direction: column;
   }
 }
-
-/*.contact-column-uno {
-  display: flex;
-}
-
-.contact-column-dos {
-  display: flex;
-  flex-direction: column;
-}
-
-/*@media screen and (min-width: 768px) { /* Grid layout for larger resolutions 
-  .grid-container{
-    flex-direction: row;
-
-  }
-}*/
 
   .contact-me {
     padding: 10px;
@@ -141,6 +94,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    box-sizing: border-box;
   }
   @media only screen and (min-width: 1001px) {
     .contact-me {
@@ -179,21 +133,10 @@ footer {
     margin-right: 5px;
   }
 
-  .personal {
-    width: 60px;
-    height: 20px;
-    color: rgb(47, 149, 197);
-    background-color: rgb(44, 42, 42);
-    padding: 0.5em;
-    border: 3px solid black;
-    border-radius: 7px;
-  }
-
   .contactheader {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1%;
   }
 
   .slide-in { /* Class to make elements of the page slide in from the right. */
