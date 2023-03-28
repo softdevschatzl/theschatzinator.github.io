@@ -142,6 +142,11 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
   }
+  @media only screen and (min-width: 1001px) {
+    .contact-me {
+      width: 100%;
+    }
+  }
 
   .contact-info {
     width: 50%;
