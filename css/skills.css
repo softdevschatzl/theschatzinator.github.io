@@ -27,7 +27,6 @@
 }
 
 .left-column {
-    order: 1;
     float: left;
     margin-right: 10px;
     flex: 1;
@@ -35,7 +34,6 @@
 }
 
 .right-column {
-    order: 2;
     float: right;
     margin-left: 10px;
     flex: 1;
@@ -43,10 +41,10 @@
 }
 
 .bottom-row {
-    order: 3;
     position: absolute;
-    bottom: -30vh;
+    margin-top: 53vh;
     flex-direction: row;
+    width: 100%;
 }
 
 body {
