@@ -42,6 +42,7 @@
 
 .bottom-row {
     flex-direction: row;
+    width: 100%;
 }
 
 @media only screen and (min-width: 981px) { /* Keeps the screen for large resolutions looking good. */
