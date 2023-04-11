@@ -137,10 +137,15 @@ header {
 
 .header2 {
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
-    border-bottom: 3px solid black;
-    display: inline-block;
+    display: flex;
     margin: 10px;
     padding: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+h2 span {
+    border-bottom: 3px solid black;
 }
 
 .employer {
