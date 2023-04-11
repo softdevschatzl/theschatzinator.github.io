@@ -70,6 +70,10 @@ header {
     margin: 0;
 }
 
+li {
+    font-size: 2vh;
+}
+
 .background {
     background-image: url("../images/background2.jpg");
     background-size: cover;
@@ -84,7 +88,6 @@ header {
 .skillslist-container {
     display: flex;
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
-    padding: 10px;
     background-color: rgb(44, 42, 42);
     color: #c9c9c9;
     border-radius: 10px;
@@ -94,13 +97,16 @@ header {
 
 .skillslist {
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
-    padding: 10px;
     background-color: rgb(44, 42, 42);
     color: #c9c9c9;
     border-radius: 10px;
     box-shadow: 2px 2px 10px #888;
     list-style-position: inside;
 }   
+
+.non-list {
+    padding: 20px;
+}
 
 .explevel {
     display: inline-block;
