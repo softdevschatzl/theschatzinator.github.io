@@ -1,170 +1,143 @@
-/*Mostly only had to change vertical aspects
-    of the styling to fit smaller resolution screens. Maybe 
-    replacing the pixel measurements with % measurements
-    instead will yield better responsive results?*/
+header {
+    display: flex;
+    flex-direction: row;
+}
 
-    header {
-        display: flex;
-        flex-direction: row;
-    }
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
 
-    /* .container {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 75vh;
-        flex-direction: column;
-        margin-top: 0;
-        padding-top: 20;
-        margin: 0;
-        padding: 0;
-    } */
+.backgroundimage {
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
 
-    .container {
-        position: relative;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        height: 100%;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-    }
+.my-picture {
+    border-radius: 50%;
+    width: 30vh;
+    height: 30vh;
+    object-fit: cover;
+    transition: transform 0.8s;
+    border: 10px solid black;
+}
 
-    .backgroundimage {
-        background-image: url(../images/background.jpg);
-        background-size: cover;
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        z-index: -1;
-    }
+.flipped {
+    transform: rotateY(180deg)
+}
 
-    /* .my-picture {
-        border-radius: 50%;
-        height: 30vh;
-        width: 30vh;
-        object-fit: cover;
-        transition: transform 0.8s;
-        border: 5px solid black;
-    } */
+.titles {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    font-size: 2vh;
+    margin-right: 5px;
+    top: 0;
+    border: 5px solid black;
+    border-radius: 10px;
+    background-color: rgb(44, 42, 42);
+    color: rgb(47, 149, 197);
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
 
-    .my-picture {
-        border-radius: 50%;
-        width: 30vh;
-        height: 30vh;
-        object-fit: cover;
-        transition: transform 0.8s;
-        border: 10px solid black;
-    }
+.quote {
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    border-bottom: 6px solid black;
+    border-radius: 5px;
+    font-size: 2.5vh;
+    text-align: center;
+}
 
-    .flipped {
-        transform: rotateY(180deg)
-    }
+.name {
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 3vh;
+}
 
-    .titles {
-        position: relative;
-        width: 100%;
-        height: 10vh;
-        font-size: 2vh;
-        margin-right: 5px;
-        top: 0;
-        border: 5px solid black;
-        border-radius: 10px;
-        background-color: rgb(44, 42, 42);
-        color: rgb(47, 149, 197);
-        padding: 10px;
-        text-align: center;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
-    }
+.btn-open {
+    height: 6vh;
+    width: 20vh;
+    border-radius: 3vh;
+    background-color: rgb(44, 42, 42);
+    color: rgb(17, 202, 202);
+    transition: all .6s ease-in-out;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    margin-top: 4vh;
+    font-size: 2vh;
+    left: 50%;
+    margin-left: -10vh;
+}
 
-    .quote {
-        font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
-        border-bottom: 6px solid black;
-        border-radius: 5px;
-        font-size: 2.5vh;
-        text-align: center;
-    }
+.btn-open:hover {
+    width: 25vh;
+    height: 8vh;
+    border-radius: 40px;
+    font-size: 2.5vh;
+    transition: all .3s ease-in-out;
+    margin-top: 3vh;
+    margin-left: -12.5vh;
+}
 
-    .name {
-        font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
-        display: flex;
-        justify-content: center;
-        font-size: 3vh;
-    }
+.flip-image.flip {
+    transform: rotateY(180deg);
+}
 
-    .btn-open {
-        height: 6vh;
-        width: 20vh;
-        border-radius: 3vh;
-        background-color: rgb(44, 42, 42);
-        color: rgb(17, 202, 202);
-        transition: all .6s ease-in-out;
-        position: absolute;
-        text-align: center;
-        justify-content: center;
-        margin-top: 4vh;
-        font-size: 2vh;
-        left: 50%;
-        margin-left: -10vh;
-    }
-    
-    .btn-open:hover {
-        width: 25vh;
-        height: 8vh;
-        border-radius: 40px;
-        font-size: 2.5vh;
-        transition: all .3s ease-in-out;
-        margin-top: 3vh;
-        margin-left: -12.5vh;
-    }
+.btn-open:focus + .menu-content {
+    display: block;
+}
 
-    .flip-image.flip {
-        transform: rotateY(180deg);
-    }
+.slide-in { /* Class to make elements of the page slide in from the right. */
+    opacity: 0;
+    transform: translateY(100%);
+    animation: slide-in 1s forwards;
+}
 
-    .btn-open:focus + .menu-content {
-        display: block;
-    }
-
-    .slide-in { /* Class to make elements of the page slide in from the right. */
+@keyframes slide-in {
+    from {
         opacity: 0;
-        transform: translateY(100%);
-        animation: slide-in 1s forwards;
+        transform: translateY();
     }
-
-    @keyframes slide-in {
-        from {
-            opacity: 0;
-            transform: translateY();
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0%);
-        }
-    }
-
-    .fade-in {
-        opacity: 0;
-        transition: opacity 1s;
-    }
-
-    .fade-in.show {
+    to {
         opacity: 1;
+        transform: translateY(0%);
     }
+}
 
-    @media only screen and (min-width: 1000px) {
-        .titles {
-            font-size: 200%;
-        }
-        .quote {
-            border-bottom: 3px solid black;
-        }
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.fade-in.show {
+    opacity: 1;
+}
+
+@media only screen and (min-width: 1000px) {
+    .titles {
+        font-size: 200%;
     }
+    .quote {
+        border-bottom: 3px solid black;
+    }
+}

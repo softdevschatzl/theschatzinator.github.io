@@ -1,6 +1,4 @@
- /* Adding some basic styling and formatting */
-
- .cloud {
+.cloud {
 	width: 350px; height: 120px;
 	
 	background: #f2f9fe;
@@ -139,16 +137,6 @@ a {
     width: 75%;
 }
 
-/* .homeButton {
-    background-color: rgb(44, 42, 42);
-    color: #e6e6e6;
-    margin-left: 1vh;
-    height: 4vh;
-    width: 4vh;
-    font-size: 2vh;
-    border-radius: 3vh;
-} */
-
 .header1 {
     display: flex;
     align-items: center;
@@ -196,23 +184,6 @@ a {
 .fade-in.show {
     opacity: 1;
 }
-
-/* .popup-arrow {
-  position: absolute;
-  left: 0;
-  top: 2em;
-  width: 4px;
-  height: 8px;
-  background: #000;
-  transform: rotate(-45deg) translateX(3px);
-  z-index: 10;
-} */
-
-/* .popup-text {
-  font-size: 1.2em;
-  color: #fff;
-  padding-left: 5px;
-} */
 
 .fade-in {
   opacity: 0;
