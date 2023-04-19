@@ -47,10 +47,6 @@
 	-moz-border-radius: 200px;
 }
 
-.cloud:hover {
-    transform: scale(1.15);
-}
-
 title { /* not even sure what this is for */
     font-family: Georgia, serif;
 }
@@ -97,8 +93,21 @@ h3 {
 }
 
 h2 {
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
     display: flex;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
     justify-content: center;
+}
+h2 span {
+    border-bottom: 3px solid black;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-items: center;
 }
 
 .h1span {
@@ -123,18 +132,65 @@ a {
 }
 
 .project-item {
-    display: flex; 
-    flex-wrap: wrap;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
     border-radius: 10px;
-    margin-left: 5px;
-    flex-direction: row;
-    justify-content: center;
+    margin: 100px;
+}
+
+.project-wrapper {
+    position: relative;
+    width: 350px;
 }
 
 .projectpara {
     display: flex;
     justify-content: center;
     width: 75%;
+}
+
+.project-info {
+    position: absolute;
+    display: none;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 2px 2px 10px #888;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 1s;
+    margin-top: 10px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-info p {
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+.project-info .langlogo {
+    display: block;
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+    width: 30px;
+}
+
+.langlogo-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.project-info.show {
+    display: flex;
+    opacity: 1;
 }
 
 .header1 {
@@ -185,31 +241,26 @@ a {
     opacity: 1;
 }
 
-.fade-in {
-  opacity: 0;
-  transition: opacity 1s;
-}
-
-.fade-in.show {
-  opacity: 1;
-}   
-
+/* Encompasses desktop/laptop devices.*/
 @media only screen and (min-width: 981px) {
     .project-item {
         flex: 1;
+    }
+
+    .cloud:hover {
+        transform: scale(1.15);
     }
 }
 
 /* Encompasses mobile phones / tablets. */
 @media only screen and (max-width: 980px) {
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
+
+    .cloud:active {
+        transform: scale(1.15);
     }
     
     .project-item {
-        width: 90%;
+        width: 100%;
         flex-direction: column;
         margin: 0 auto;
         margin-top: 250px;
@@ -243,6 +294,19 @@ a {
         bottom: -5px;
     }
 
+    .project-info p {
+        font-size: 30px;
+    }
+
+    .project-info {
+        position: relative;
+        left: 50%;
+    }
+
+    .project-info .langlogo {
+        width: 100px;
+    }
+
     .homeButton {
         display: flex;
         justify-content: center;
@@ -260,7 +324,7 @@ a {
     }
     
     .cloud {
-        left: 30%;
+        left: 50%;
         margin: 0;
         margin-bottom: 80px;
     }

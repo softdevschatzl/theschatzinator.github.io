@@ -6,7 +6,8 @@
         <link rel = "stylesheet" type = "text/css" href = "css/projects.css">
     </head>
     <script src = "mainjs/fade-in.js"></script>
-    <script src = "mainjs/spanfade.js"></script>
+    <script src = "mainjs/toggleProjectInfo.js"></script>
+    <script src = "mainjs/mobilecloudactive.js"></script>
     <body>
         <header>
             <div class = "header1">
@@ -15,36 +16,53 @@
                     <a href = "menu.html">
                         <button id = "homeButton" class = "homeButton">⌂</button>
                     </a>
-                    <span class = "h1span"><strong style="font-size:large"><---</strong> Menu</span>
                 </div>
             </div>
         </header>
         <main>
             <section id="projects" class = "projects">
+                <h2><span>What I'm Working On</span></h2>
                 <div class = "container slide-in">
-                    <h2>My Projects</h2>
                     <div style = "display: flex; flex-wrap: wrap;">
                         <div class = "project-item">
-                            <a href = "https://github.com/theschatzinator/bankingapplication" target="_blank">
+                            <div class = "project-wrapper">
                                 <div class = "cloud">
                                     <h3>Project 1:</h3>
-                                    <p class = "projectpara">Banking Client/Server Application</p>
+                                    <p class = "projectpara">Fast Approaching Zero</p>
                                 </div>
-                            </a>
+                                <div class = "project-info">
+                                    <img class = "langlogo" src = "./images/kotlinicon.png">
+                                    <p>This Android mobile app is currently undergoing
+                                        internal testing, but I must withhold information
+                                        per the request of my client.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                         <div class = "project-item">
-                            <a href = "https://github.com/theschatzinator/shakey-no-more" target="_blank">
+                            <div class = "project-wrapper">
                                 <div class = "cloud">
                                     <h3>Project 2:</h3>
-                                    <p class = "projectpara">Haptic Feedback Reduction</p>
+                                    <p class = "projectpara">JumpCut Chrome Extension</p>
                                 </div>
-                            </a>
+                                <div class = "project-info">
+                                    <div class = "langlogo-wrapper">
+                                        <img class = "langlogo" src = "./images/jsicon.png">
+                                        <a href = "https://github.com/theschatzinator/JumpCut" target = "_blank">
+                                            <img class = "langlogo" src = "./images/GitHub-Mark.png" alt = "JavaScript">
+                                        </a>
+                                    </div>
+                                    <p>I've been working on a small Chrome extension that 
+                                        auto-scrolls to snippet text found on the
+                                        corresponding Google search result.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
               </section>
         </main>
-        <script src = "mainjs/homebutton.js"></script>
-        <script src = "mainjs/menunotifier.js"></script>
+        
     </body>
 </html>

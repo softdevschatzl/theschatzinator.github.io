@@ -1,5 +1,6 @@
-window.addEventListener("load", function() {
-    var element = document.querySelector(".fade-in");
-    element.classList.add("show");
+window.addEventListener("load", function () {
+  var elements = document.querySelectorAll(".fade-in");
+  elements.forEach(function (element) {
+      element.classList.add("show");
   });
-  
+});

@@ -17,6 +17,7 @@ h1 {
 }
 
 h2 {
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
   display: flex;
   /* border-bottom: 3px solid black; */
   font-size: 3vh;
@@ -46,6 +47,7 @@ main {
 }
 
 .aboutpara {
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
   padding: 2em;
   background-color: rgb(44, 42, 42);
   color: #c9c9c9;
@@ -80,6 +82,7 @@ main {
 }
 
 .contact-me {
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
   padding: 10px;
   background-color: rgb(44, 42, 42);
   color: #c9c9c9;
