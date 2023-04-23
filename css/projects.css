@@ -150,7 +150,7 @@ a {
 
 .project-info {
     position: absolute;
-    display: none;
+    display: flex;
     width: 100%;
     max-width: 350px;
     margin: 0 auto;
@@ -161,13 +161,19 @@ a {
     padding: 10px;
     box-sizing: border-box;
     z-index: 999;
-    opacity: 0;
-    transition: opacity 1s;
+    transition: opacity 0.3s ease-in-out;
     margin-top: 10px;
     text-align: center;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.project-info.visible {
+    visibility: visible;
+    opacity: 1;
 }
 
 .project-info p {
@@ -178,7 +184,7 @@ a {
 
 .project-info .langlogo {
     display: block;
-    margin: 10px 10px 10px 10px;
+    margin: 0 10px 10px 10px;
     text-align: center;
     width: 30px;
 }
@@ -186,11 +192,6 @@ a {
 .langlogo-wrapper {
     display: flex;
     flex-direction: row;
-}
-
-.project-info.show {
-    display: flex;
-    opacity: 1;
 }
 
 .header1 {
