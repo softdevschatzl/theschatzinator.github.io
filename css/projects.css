@@ -47,6 +47,10 @@
 	-moz-border-radius: 200px;
 }
 
+.cloud:hover {
+    transform: scale(1.15);
+}
+
 title { /* not even sure what this is for */
     font-family: Georgia, serif;
 }
@@ -134,7 +138,7 @@ a {
 .project-item {
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
     border-radius: 10px;
-    margin: 100px;
+    margin: 40px;
 }
 
 .project-wrapper {
@@ -183,15 +187,18 @@ a {
 }
 
 .project-info .langlogo {
-    display: block;
-    margin: 0 10px 10px 10px;
+    display: flex;
+    margin: 10px 10px 10px;
     text-align: center;
     width: 30px;
+    justify-content: center;
 }
 
 .langlogo-wrapper {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .header1 {
@@ -214,6 +221,14 @@ a {
 
 .homeButton:hover {
     font-size: 16px;
+}
+
+.live-site-button {
+    height: 30px;
+    border-radius: 5px;
+}
+.live-site-button:hover {
+    background-color: #d1d1d1;
 }
 
 .slide-in { /* Class to make elements of the page slide in from the right. */
@@ -242,91 +257,48 @@ a {
     opacity: 1;
 }
 
-/* Encompasses desktop/laptop devices.*/
-@media only screen and (min-width: 981px) {
-    .project-item {
-        flex: 1;
-    }
-
-    .cloud:hover {
-        transform: scale(1.15);
-    }
-}
-
-/* Encompasses mobile phones / tablets. */
-@media only screen and (max-width: 980px) {
-
-    .cloud:active {
-        transform: scale(1.15);
-    }
-    
-    .project-item {
-        width: 100%;
-        flex-direction: column;
-        margin: 0 auto;
-        margin-top: 250px;
-    }
-
-    .projects {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .cloud, .cloud:after {
-        transform: scale(1.5);
-    }
-    
-
-    h1 {
-        font-size: 70px;
-    }
-
-    h2 {
-        font-size: 60px;
-    }
-
-    h3 {
-        position: absolute;
-    }
-
-    .projectpara {
-        font-size: 20px;
-        position: absolute;
-        bottom: -5px;
-    }
-
-    .project-info p {
-        font-size: 30px;
-    }
-
-    .project-info {
-        position: relative;
-        left: 50%;
-    }
-
-    .project-info .langlogo {
-        width: 100px;
-    }
-
+@media screen and (max-width: 1000px) {
     .homeButton {
-        display: flex;
-        justify-content: center;
         width: 80px;
         height: 80px;
         border-radius: 40px;
         font-size: 40px;
-        align-items: center;
-        text-align: center;
-        line-height: 70px;
     }
-
-    .homeButton:hover {
+    .header1 {
+        height: 4vh;
+    }
+    h1 {
+        font-size: 70px;
+    }
+    h2 {
+        font-size: 60px;
+    }
+    .cloud {
+        transform: scale(1.4);
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+    .project-info {
+        width: 100%;
+    }
+    .project-info .langlogo {
+        width: 100px;
+    }
+    .projectpara {
+        font-size: 20px;
+    }
+    .project-info p {
         font-size: 30px;
     }
-    
-    .cloud {
-        left: 50%;
-        margin: 0;
-        margin-bottom: 80px;
+    .live-site-button {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        font-size: 30px;
     }
 }
